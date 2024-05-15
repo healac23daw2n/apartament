@@ -25,6 +25,6 @@ Route::middleware('auth')->group(function () {
 Route::get('/inicio', [AdminController::class, 'index'])->name('administrador.index');
 
 //routes Reserva
-Route::get('/reservas', [ReservaControler::class, 'index'])->name('reserva.index');
+Route::get('/reserva', [ReservaControler::class, 'index'])->name('reserva.index');
 
 require __DIR__.'/auth.php';
