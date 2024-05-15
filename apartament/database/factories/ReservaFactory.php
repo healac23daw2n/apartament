@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Arr;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Reserva>
@@ -16,8 +17,17 @@ class ReservaFactory extends Factory
      */
     public function definition(): array
     {
+        $options = [
+            'Hoteles',
+            'Hostales y pensiones',
+            'Paradores',
+            'Alojamientos singulares',
+            'Campings túristicos',
+            'Albergues',
+            'Apartamentos turísticos',
+        ];
         return [
-            //
+            'name' => Arr::random($options),
         ];
     }
 }
