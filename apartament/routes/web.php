@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClientsController;
 use App\Http\Controllers\Controladorclient;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReservaControler;
@@ -26,5 +27,7 @@ Route::get('/inicio', [AdminController::class, 'index'])->name('administrador.in
 
 //routes Reserva
 Route::get('/reservas', [ReservaControler::class, 'index'])->name('reservas.index');
+
+Route::get('/clients', [ClientsController::class, 'index'])->name('clients.index');
 
 require __DIR__.'/auth.php';
