@@ -332,8 +332,8 @@ return [
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'Edit_users',
-            'url' => 'admin/settings',
+            'text' => 'Clients',
+            'route' => 'clients.index',
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
