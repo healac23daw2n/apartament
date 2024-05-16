@@ -26,6 +26,11 @@
                         @enderror
                     </div>
                 </div>
+                
+                <div class="text-center">
+                    <input type="submit" value="Crear cliente" class="btn btn-primary">
+                    <a href="{{ route('clients.create' ) }}" class="btn btn-secondary">Cancelar</a>
+                </div>
             </form>
         </div>
     </div>    
