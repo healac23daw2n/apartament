@@ -25,6 +25,7 @@ return new class extends Migration
             $table->float('Quantitat_diposit');
             $table->enum('Tipus_asseguranca', ['Franquicia_fins_1000_Euros', 'Franquicia_fins_500_Euros', 'Sense_franquicia']);
             $table->timestamps();
+            
             $table->primary(['Dni_client', 'Codi_unic_apartament']);
         });
     }
