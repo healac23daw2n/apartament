@@ -323,7 +323,7 @@ return [
         ['header' => 'account_settings'],
         [
             'text' => 'Reserva',
-            'route' => 'reserva.index',
+            'route' => 'reservas.index',
             'icon' => 'far fa-calendar-alt',
         ],
         [
