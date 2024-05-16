@@ -30,5 +30,6 @@ Route::get('/reservas', [ReservaControler::class, 'index'])->name('reservas.inde
 
 Route::get('/clients', [ClientsController::class, 'index'])->name('clients.index');
 Route::get('/clients/create', [ClientsController::class, 'create'])->name('clients.create');
+Route::post('/clients', [ClientsController::class, 'store'])->name('clients.store');
 
 require __DIR__.'/auth.php';

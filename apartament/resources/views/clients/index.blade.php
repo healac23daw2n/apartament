@@ -9,6 +9,10 @@
 @stop
 
 @section('content')
+    @if (session('success-create'))
+    <div class="alert alert-primary text-center">
+        {{ session('success-create') }}
+    </div>
 
 <div class="card">
     <div class="card-header container">

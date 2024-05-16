@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ClientsRequest;
 use App\Models\Clients;
 use Illuminate\Http\Request;
 
@@ -26,9 +27,14 @@ class ClientsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ClientsRequest $request)
     {
-        //
+        $client = $request->all();
+
+        Clients::create($client);
+
+        return redirect()->action([ClientsController::class, 'index'])
+        ->with('success-create', 'cliente agregado con exito');
     }
 
     /**
