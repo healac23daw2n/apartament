@@ -9,6 +9,8 @@
 @stop
 
 @section('content')
+
+<div class="card">
     <div class="card-header container">
         <div class="row">
             <div class="col-log-6 col-md-6 col-sm-12">
@@ -127,6 +129,9 @@
             </tbody>
         </table>
     </div>
+</div>
+
+    
 @stop
 
 @section('css')
