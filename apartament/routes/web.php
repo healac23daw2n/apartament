@@ -29,5 +29,6 @@ Route::get('/inicio', [AdminController::class, 'index'])->name('administrador.in
 Route::get('/reservas', [ReservaControler::class, 'index'])->name('reservas.index');
 
 Route::get('/clients', [ClientsController::class, 'index'])->name('clients.index');
+Route::get('/clients/create', [ClientsController::class, 'create'])->name('clients.create');
 
 require __DIR__.'/auth.php';

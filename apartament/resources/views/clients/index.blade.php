@@ -9,6 +9,14 @@
 @stop
 
 @section('content')
+    <div class="card-header container">
+        <div class="row">
+            <div class="col-log-6 col-md-6 col-sm-12">
+                <a href="{{ route ('clients.create')}}" class="btn btn-primary"><b>Agregar clientes</b></a>
+            </div>
+        </div>
+    </div>    
+
     <div class="card-body">
         <table class="table table-striped table-sa">
             <thead>

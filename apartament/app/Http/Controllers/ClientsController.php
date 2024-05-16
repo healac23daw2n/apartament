@@ -20,7 +20,7 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        //
+        return view('clients.create');
     }
 
     /**
