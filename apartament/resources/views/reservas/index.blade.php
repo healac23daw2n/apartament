@@ -23,6 +23,7 @@
                     <th>Precio por día</th>
                     <th>Dipósito</th>
                     <th>Tipo de aseguranza</th>
+                    <th class="text-center" colspan="2">Acciones</th>
                 </tr>
             </thead>
 
@@ -35,10 +36,22 @@
                 <td>2024-05-25</td>
                 <td>Recepción</td>
                 <td>$100</td>
-                <td>Si</td>
+                <td>
+                    <select class="form-control" name="deposito">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </td>
                 <td>Franquicia hasta 1000 Euros</td>
-                    <td>
+                    <td width="5px">
                         <a href="#" class="btn btn-primary btn-sm mb-2">Editar</a>
+                    </td>
+                    <td width="5px">
+                        <form action="#" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+                        </form>
                     </td>
                 </tr>
                 <tr>
@@ -49,10 +62,22 @@
                     <td>2024-06-20</td>
                     <td>Oficina del administrador</td>
                     <td>$120</td>
-                    <td>Sí</td>
-                    <td>Sin franquicia</td>
                     <td>
+                        <select class="form-control" name="deposito">
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                    <td>Sin franquicia</td>
+                    <td width="5px">
                         <a href="#" class="btn btn-primary btn-sm mb-2">Editar</a>
+                    </td>
+                    <td width="5px">
+                        <form action="#" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+                        </form>
                     </td>
                 </tr>
                 <tr>
@@ -63,10 +88,22 @@
                     <td>2024-07-15</td>
                     <td>Recepción principal</td>
                     <td>$90</td>
-                    <td>No</td>
-                    <td>Franquicia hasta 500 Euros</td>
                     <td>
+                        <select class="form-control" name="deposito">
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                    <td>Franquicia hasta 500 Euros</td>
+                    <td width="5px">
                         <a href="#" class="btn btn-primary btn-sm mb-2">Editar</a>
+                    </td>
+                    <td width="5px">
+                        <form action="#" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+                        </form>
                     </td>
                 </tr>
                 <tr>
@@ -77,10 +114,22 @@
                     <td>2024-08-25</td>
                     <td>Oficina de servicio al cliente</td>
                     <td>$150</td>
-                    <td>Sí</td>
-                    <td>Franquicia hasta 1000 Euros</td>
                     <td>
+                        <select class="form-control" name="deposito">
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                    <td>Franquicia hasta 1000 Euros</td>
+                    <td width="5px">
                         <a href="#" class="btn btn-primary btn-sm mb-2">Editar</a>
+                    </td>
+                    <td width="5px">
+                        <form action="#" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+                        </form>
                     </td>
                 </tr>
             </tbody>
