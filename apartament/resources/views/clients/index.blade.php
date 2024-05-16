@@ -50,7 +50,72 @@
                         </form>
                     </td>
                 </tr>
-                <!-- Agrega aquí más filas con los datos de otros clientes -->
+                <tr>
+                    <td>87654321B</td>
+                    <td>Jane Smith</td>
+                    <td>28</td>
+                    <td>987654321</td>
+                    <td>Avenida Central 456</td>
+                    <td>Madrid</td>
+                    <td>España</td>
+                    <td>jane@example.com</td>
+                    <td>Dèbit</td>
+                    <td>9876 5432 1098 7654</td>
+                    <td width="5px">
+                        <a href="#" class="btn btn-primary btn-sm mb-2">Editar</a>
+                    </td>
+                    <td width="5px">
+                        <form action="#" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13579246C</td>
+                    <td>Michael Johnson</td>
+                    <td>45</td>
+                    <td>456123789</td>
+                    <td>Plaza Mayor 789</td>
+                    <td>Valencia</td>
+                    <td>España</td>
+                    <td>michael@example.com</td>
+                    <td>Crèdit</td>
+                    <td>4567 8901 2345 6789</td>
+                    <td width="5px">
+                        <a href="#" class="btn btn-primary btn-sm mb-2">Editar</a>
+                    </td>
+                    <td width="5px">
+                        <form action="#" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>98765432X</td>
+                    <td>María García</td>
+                    <td>30</td>
+                    <td>654789321</td>
+                    <td>Calle Alameda 456</td>
+                    <td>Sevilla</td>
+                    <td>España</td>
+                    <td>maria@example.com</td>
+                    <td>Dèbit</td>
+                    <td>6543 2109 8765 4321</td>
+                    <td width="5px">
+                        <a href="#" class="btn btn-primary btn-sm mb-2">Editar</a>
+                    </td>
+                    <td width="5px">
+                        <form action="#" method="POST">
+                            @csrf 
+                            @method('DELETE')
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+                        </form>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
